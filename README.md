@@ -1,4 +1,3 @@
-#
 Simple pyhon GUI
 ##
 
