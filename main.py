@@ -19,12 +19,10 @@ def key_gen(winmaster, user, password):
     for char_u in virt_key_u:
         key_u.append(chr(char_u))
     key_u = ''.join(key_u)
-    print(key_u)
 
     for char_p in virt_key_p:
         key_p.append(chr(char_p))
     key_p = ''.join(key_p)
-    print(key_p)
 
     if key_u == user and key_p == password:
         fin_label = CTkLabel(
