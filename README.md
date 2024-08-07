@@ -1,6 +1,6 @@
 **Simple pyhon GUI**
 #
-How to use the gui
+How to use the **GUI**
 
 Install **customtkinter** with
 ```
