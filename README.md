@@ -1,6 +1,6 @@
 #
 Simple pyhon GUI
-#
+##
 
 ##How to use the GUi
 
