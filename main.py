@@ -9,8 +9,15 @@ def destoy_all_widgets():
         widgets.destroy()
     widget_to_destroy.clear()
 
+'''
+    used in Error_Handling func
+    Takes winmaster (main frame of gui)
+    Takes user and password which are writen in Error_Handling
+'''
 def key_gen(winmaster, user, password):
+    # virt_key_u - username: BLUSE
     virt_key_u = [0x42, 0x4C, 0x55, 0x53, 0x45]
+    # virt_key_p - password: rivvey
     virt_key_p = [0x72, 0x69, 0x76, 0x76, 0x79]
 
     key_u = []
@@ -41,6 +48,11 @@ def key_gen(winmaster, user, password):
 
     destoy_all_widgets()
 
+'''
+    only func that run when button is pressed
+    Takes winmaster (main frame of gui)
+    Takes user and password which are retrived after button pressed
+'''
 def Error_Handling(winmaster, user, password):
     global warn_label_user, warn_label_pass
 
@@ -120,7 +132,7 @@ def main_window():
         pass_label = CTkLabel(
             winmaster,
             text = 'Password:',
-            font = ('Arial', 16)
+            font = ('Helvetica', 16)
         )
         pass_label.pack(pady = (10, 0))
         widget_to_destroy.append(pass_label)
